@@ -13,4 +13,11 @@ public class Circulo extends Figura{
     public double area() {
         return Math.PI * Math.pow(radio, 2);
     }
+
+    @Override
+    public String toString() {
+        return "Circulo [radio=" + radio + "]";
+    }
+
+    
 }
