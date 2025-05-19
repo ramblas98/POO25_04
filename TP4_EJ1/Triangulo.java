@@ -44,5 +44,46 @@ public class Triangulo extends Figura{
         this.ladoC = ladoC;
     }
 
+    public Triangulo(){}
+
+    
+    public boolean esEquilatero(){
+        if(ladoA == ladoB && ladoA == ladoC && ladoB == ladoC ){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean esIsosceles(){
+        if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean esEscaleno(){
+        if(ladoA != ladoB && ladoA != ladoC && ladoB != ladoC){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public boolean esRectangulo(){
+        double hipotenusa = Math.sqrt(Math.pow(ladoA, 2) + Math.pow(ladoB, 2));
+        if(hipotenusa == (Math.PI/2)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Triangulo [ladoA=" + ladoA + ", ladoB=" + ladoB + ", ladoC=" + ladoC + "]";
+    }
+
     
 }
