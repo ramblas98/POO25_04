@@ -18,7 +18,7 @@ public class TP4_EJ1 {
         ArrayList<Figura> lista = new ArrayList();
         lista.add(new Rectangulo(10,20));
         lista.add(new Triangulo(10,10,10));
-        //lista.add(new Circulo(10,20));
+        lista.add(new Circulo(30));
         
         for(int i = 0 ; i<lista.size(); i++){
             if(lista.get(i) instanceof Rectangulo){
@@ -28,6 +28,9 @@ public class TP4_EJ1 {
                 if(lista.get(i) instanceof Triangulo){
                   System.out.println("El elemento " + i + "Es un Triangulo");
                   System.out.println("Su area es " + lista.get(i).area());
+                } else{
+                  System.out.println("El elemento " + i + " es un Círculo");
+                  System.out.println(lista.get(i)); // Llama a toString() automáticamente
                 }
             } 
         }
