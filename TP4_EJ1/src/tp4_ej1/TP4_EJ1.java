@@ -24,7 +24,12 @@ public class TP4_EJ1 {
             if(lista.get(i) instanceof Rectangulo){
                System.out.println("El elemento " + i + "Es un rectangulo");
                System.out.println("Su area es " + lista.get(i).area());
-            }
+            } else{
+                if(lista.get(i) instanceof Triangulo){
+                  System.out.println("El elemento " + i + "Es un Triangulo");
+                  System.out.println("Su area es " + lista.get(i).area());
+                }
+            } 
         }
     }
     
