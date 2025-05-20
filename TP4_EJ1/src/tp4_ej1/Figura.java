@@ -24,4 +24,8 @@ public class Figura {
     public double perimetro (){
         return 0;
     }
+    
+    public String toString(){
+        return "Soy " + this.getClass().getSimpleName();
+    }
 }

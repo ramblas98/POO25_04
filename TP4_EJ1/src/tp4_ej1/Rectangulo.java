@@ -53,5 +53,8 @@ public class Rectangulo extends Figura {
     }
     
     //toString
-    
+    @Override
+    public String toString(){
+        return String.format("Rectangulo de: Area: %.2f, Perimetro: %.2f",area(), perimetro());
+    }
 }

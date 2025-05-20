@@ -46,6 +46,6 @@ public class Circulo extends Figura {
     
     //toString
     public String toString(){
-        return String.format("Radio: %.2f, Area: %.2f, Perimetro: %.2f", radio,area(),perimetro());
+        return String.format("Circulo de : Radio: %.2f, Area: %.2f, Perimetro: %.2f", radio,area(),perimetro());
     }
 }

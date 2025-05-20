@@ -101,4 +101,8 @@ public class Triangulo extends Figura{
         } else return false;
     }
     
+    @Override
+    public String toString(){
+        return String.format("Triangulo de: Area: %.2f, Perimetro: %.2f", area(), perimetro());
+    }
 }
