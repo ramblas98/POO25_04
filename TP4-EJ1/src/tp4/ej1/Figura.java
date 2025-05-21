@@ -10,7 +10,21 @@ package tp4.ej1;
  */
 public class Figura {
     
+    float area(){
+        return 0;
+    }
     
+    float perimetro(){
+        return 0;
+    }
+    
+    boolean mismaArea(Figura f){
+        if(this.area() == f.area()){
+            return true;
+        }else{
+            return false;
+        }
+    }
     
     
 }
