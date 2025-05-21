@@ -11,7 +11,7 @@ public class TP_EJ2 {
         gimnasio.add(carlosPower);
         gimnasio.add(luciaDance);
         gimnasio.add(ramiroSnack);
-
+        
         for(int i = 0; i<gimnasio.size();i++){
             gimnasio.get(i).realizar();
         }
