@@ -15,8 +15,10 @@ public abstract class ZumbaGalactica extends Entrenamiento{
         super(nombreAvatar);
     }
     
-    final void finalizar(){
-        System.out.println("SSSsaaa");
+
+    @Override
+    final public void realizar(){
+        System.out.println(nombreAvatar + " Baila mientras aumenta su agilidad!");
     }
     
 }

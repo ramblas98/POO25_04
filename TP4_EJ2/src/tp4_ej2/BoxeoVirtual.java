@@ -17,6 +17,6 @@ public abstract class BoxeoVirtual extends Entrenamiento {
     
     @Override
     final public void realizar(){
-        System.out.println(nombreAvatar + "¡Lento!");
+        System.out.println(nombreAvatar + " ¡Lento!");
     }
 }

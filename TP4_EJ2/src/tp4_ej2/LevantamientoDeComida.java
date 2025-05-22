@@ -15,7 +15,8 @@ public abstract class LevantamientoDeComida extends Entrenamiento {
         super(nombreAvatar);
     }
     
-    final public void realizr(){
-        System.out.println("SSSAAAAWWWWWW");
+    @Override
+    final public void realizar(){
+        System.out.println(nombreAvatar + " Levanta bowls de ramen para mejorar su fuerza de forma cuestionable");
     }
 }

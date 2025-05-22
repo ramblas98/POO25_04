@@ -16,7 +16,9 @@ public class TP4_EJ2 {
      */
     public static void main(String[] args) {
         ArrayList<Entrenamiento> lista = new ArrayList();
-        lista.add(new BoxeoVirtual("User223") {});
+        lista.add(new BoxeoVirtual("CarlosPower") {});
+        lista.add(new ZumbaGalactica("LuciaDance") {});
+        lista.add(new LevantamientoDeComida("RamiroSnack") {});
         lista.forEach((lis) -> {
             lis.realizar();
         });
