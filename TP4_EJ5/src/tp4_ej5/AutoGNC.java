@@ -67,7 +67,6 @@ public class AutoGNC extends Auto{
     }
     
     //toString
-
     @Override
     public String toString() {
         return String.format("Combustible disponible: %.2f, Km recorridos: %.2f", combustible, km);

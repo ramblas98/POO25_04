@@ -45,7 +45,7 @@ public class AutoNaftero extends Auto {
     final public void cargar(double importe){
         double nuevoImporte = importe * 1.1; //AUMENTO PROMO "Mundial 2022"
         this.combustible += nuevoImporte/precioNafta;
-        System.out.println("Por "+ importe +"$"+ " Al vehiculo se le argó: " + String.format("%.2f", nuevoImporte / precioNafta) + " Lts");
+        System.out.println("Por "+ importe +"$"+ " Al vehiculo se le cargó: " + String.format("%.2f", nuevoImporte / precioNafta) + " Lts");
     }
     
     //CONSUMO

@@ -20,25 +20,34 @@ public class TP4_EJ5 {
         Auto c2 = new AutoDiesel(10,10);
         Auto c3 = new AutoGNC(10,10);
         
+        System.out.println("AutoNaftero");
+        System.out.println(c1);
         c1.cargar(300);
         c1.recorrer(100);
-        double consu = c1.consumo(300);
+        System.out.println("Precio de Nafta: "+ String.format("%.2f",c1.precioUnidadCombustible()));
+        double consu = c1.consumo(100);
         System.out.println("Consumo de combustible por 100km"+ String.format(" %.2f Lts",consu));
         System.out.println(c1);
         
-        System.out.println("-----------------------------");
+        System.out.println("----------------------------------------------------");
         
+        System.out.println("AutoDiesel");
+        System.out.println(c2);
         c2.cargar(300);
         c2.recorrer(20);
-        double consu2 = c2.consumo(300);
+        System.out.println("Precio de Diesel: "+ String.format("%.2f",c2.precioUnidadCombustible()));
+        double consu2 = c2.consumo(100);
         System.out.println("Consumo de combustible por 100 km" + String.format(" %.2f Lts",consu2));
         System.out.println(c2);
         
-        System.out.println("-----------------------------");
+        System.out.println("----------------------------------------------------");
         
+        System.out.println("AutoGNC");
+        System.out.println(c3);
         c3.cargar(300);
         c3.recorrer(20);
-        double consu3 = c3.consumo(300);
+        System.out.println("Precio de GNC: "+ String.format("%.2f",c3.precioUnidadCombustible()));
+        double consu3 = c3.consumo(100);
         System.out.println("Consumo de combustible por 100 km" + String.format(" %.2f Lts",consu3));
         System.out.println(c3);
     }
