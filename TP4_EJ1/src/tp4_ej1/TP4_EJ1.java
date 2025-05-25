@@ -22,11 +22,11 @@ public class TP4_EJ1 {
         
         for (int i=0; i<lista.size(); i++) {
             
-            if (lista.get(i) instanceof Rectangulo) {
+            if (lista.get(i) instanceof Rectangulo rectangulo) {
                 
                 System.out.println("El Elemento [" + i + "] es Rectangulo");
                 System.out.println("Su Area es: " + lista.get(i).Area());
-                Rectangulo r = (Rectangulo) lista.get(i);
+                Rectangulo r = rectangulo;
                 System.out.println(r);
                 
             }
