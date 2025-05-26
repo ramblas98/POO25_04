@@ -8,6 +8,17 @@ public class BibliotecaPersonal {
 
     public BibliotecaPersonal() {
     }
+
+    public BibliotecaPersonal(Lectura[] lecturas, int cantLec) {
+        this.lecturas = lecturas;
+        this.cantLec = cantLec;
+    }
+    
+     public BibliotecaPersonal(int capacidad) {
+        this.lecturas = new Lectura[capacidad];
+        this.cantLec = 0;
+    }
+
     
     public int getCantLec() {
         return cantLec;
@@ -15,29 +26,17 @@ public class BibliotecaPersonal {
     
     public void AgregarLectura(Lectura l) {
         
-        int ban = 0;
-        
-        for (int i=0; i<this.cantLec; i++) {
+        for (int i = 0; i < this.cantLec; i++) {
             
-            if (this.lecturas[i].getTitulo().equals(l.getTitulo())) {
+            if (this.lecturas[i].getTitulo().equalsIgnoreCase(l.getTitulo())) {
                 
-                ban = 1;
-                break;
+                System.out.println("Esta Lectura ya existe.");
+                return;
                 
             }
-            
         }
-        
-        if (ban != 1) {
-            
-            this.lecturas[cantLec] = l;
-            this.cantLec++;
-            
-        } else {
-            
-            System.out.println("Esta Lectura Ya Existe..");
-            
-        }
+
+        this.lecturas[cantLec++] = l;
         
     }
     
@@ -67,6 +66,8 @@ public class BibliotecaPersonal {
     
     public Lectura LecturaMayor() {
         
+        if (this.cantLec == 0) return null;
+        
         int may = this.lecturas[0].getPuntuacion();
         Lectura mayor = null;
         
@@ -86,6 +87,8 @@ public class BibliotecaPersonal {
     }
     
     public Lectura LecturaMenor() {
+        
+         if (cantLec == 0) return null;
         
         int men = this.lecturas[0].getPuntuacion();
         Lectura menor = null;
@@ -109,7 +112,7 @@ public class BibliotecaPersonal {
         
         for (int i=0; i<this.cantLec; i++) {
             
-            System.out.println(this.lecturas[i].Resumen());
+             System.out.println(lecturas[i].getTitulo() + ": " + lecturas[i].Resumen());
             
         }
         
