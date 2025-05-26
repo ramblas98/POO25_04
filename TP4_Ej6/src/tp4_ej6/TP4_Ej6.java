@@ -20,6 +20,10 @@ public class TP4_Ej6 {
         
         biblioteca.resumenGeneral();
         System.out.println("\nEl tiempo total de lectura de toda la biblioteca es de: "+biblioteca.tiempoTotalLectura()+" horas");
+        
+        
+        biblioteca.eliminar("Nacional Geographic");
+        biblioteca.resumenGeneral();
     }
     
 }

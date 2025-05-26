@@ -22,6 +22,12 @@ public class BibliotecaPersonal {
         else this.lecturas.add(l);
     }
     
+    public void eliminar(String s){
+        for(int i=0;i<this.lecturas.size();i++){
+            if(this.lecturas.get(i).getTitulo().equals(s)||this.lecturas.get(i).getAutor().equals(s)) this.lecturas.remove(i);
+        }
+    }
+    
     public Lectura obtenerMayorCalificacion(){
         double c = this.lecturas.get(0).getCalificacion();
         int indice=0;
@@ -61,3 +67,4 @@ public class BibliotecaPersonal {
         return horastotales;
     }
 }
+
