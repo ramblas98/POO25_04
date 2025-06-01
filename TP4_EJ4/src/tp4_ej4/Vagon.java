@@ -2,7 +2,6 @@
 package tp4_ej4;
 
 public class Vagon {
-    
     public double pesoMaximo() {
         return 0;
     }
@@ -11,9 +10,7 @@ public class Vagon {
         return 0;
     }
 
-    @Override
-    public String toString() {
-        return "Vagón genérico";
+    public boolean esLiviano() {
+        return pesoMaximo() < 2500;
     }
-    
 }

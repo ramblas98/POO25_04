@@ -3,20 +3,15 @@ package tp4_ej4;
 
 public class VagonCarga extends Vagon {
     
-    private double peso;
+    private double cargaMaxima;
 
-    public VagonCarga(double peso) {
-        this.peso = peso;
+    public VagonCarga(double cargaMaxima) {
+        this.cargaMaxima = cargaMaxima;
     }
 
     @Override
     public double pesoMaximo() {
-        return peso;
+        return cargaMaxima + 160;
     }
 
-    @Override
-    public String toString() {
-        return "VagonCarga [peso=" + peso + "]";
-    }
-    
 }

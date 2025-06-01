@@ -3,27 +3,25 @@ package tp4_ej4;
 
 public class VagonPasajeros extends Vagon {
     
-    private int pasajeros;
-    private double pesoPasajero;
+    private double largo;
+    private double anchoUtil;
 
-    public VagonPasajeros(int pasajeros, double pesoPasajero) {
-        this.pasajeros = pasajeros;
-        this.pesoPasajero = pesoPasajero;
-    }
-
-    @Override
-    public double pesoMaximo() {
-        return pasajeros * pesoPasajero;
+    public VagonPasajeros(double largo, double anchoUtil) {
+        this.largo = largo;
+        this.anchoUtil = anchoUtil;
     }
 
     @Override
     public int capacidadPasajeros() {
-        return pasajeros;
+        if(anchoUtil <= 2.5){
+            return (int)(largo*8);
+        }
+        return (int)(largo*10);
     }
 
     @Override
-    public String toString() {
-        return "VagonPasajeros [capacidad=" + pasajeros + ", pesoMax=" + pesoMaximo() + "]";
+    public double pesoMaximo() {
+        return capacidadPasajeros() * 80;
     }
     
 }
